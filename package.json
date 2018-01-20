@@ -1,0 +1,50 @@
+{
+  "name": "human-api",
+  "version": "1.0.0",
+  "description": "micro-service for CRUD operations related to humans interfacing with heybale",
+  "main": "dist",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp",
+    "test": "gulp lint && nyc mocha test --compilers js:babel-register",
+    "test-unit": "nyc mocha test --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nlistio/human-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlistio/human-api/issues"
+  },
+  "homepage": "https://github.com/nlistio/human-api#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "dependencies": {
+    "boom": "^7.1.1",
+    "bunyan": "^1.8.12",
+    "countdown": "^2.6.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "settings-lib": "^0.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.41.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-eslint": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.3"
+  }
+}
