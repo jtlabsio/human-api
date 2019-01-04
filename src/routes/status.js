@@ -1,10 +1,10 @@
-import Router from 'koa-router';
 import countdown from 'countdown';
+import Router from 'koa-router';
 
 export default (app, models, self = {}) => {
 	let
-		router = new Router(),
-		routeInit = new Date();
+		routeInit = new Date(),
+		router = new Router();
 
 	app.log.trace('routes.status: registering routes for /v1/status');
 

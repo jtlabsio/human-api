@@ -1,5 +1,5 @@
-import Router from 'koa-router';
 import fs from 'fs';
+import Router from 'koa-router';
 
 const PACKAGE_JSON = './package.json';
 

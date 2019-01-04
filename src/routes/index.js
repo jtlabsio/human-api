@@ -1,7 +1,7 @@
-import Router from 'koa-router';
-import boom from 'boom';
+import Boom from 'boom';
 import humans from './humans';
 import middleware from './middleware';
+import Router from 'koa-router';
 import status from './status';
 import version from './version';
 
@@ -36,13 +36,13 @@ export default async (app, models, self = {}) => {
 
 	// 404s
 	app.use(async (ctx) => {
-		throw boom.notFound(`${ctx.method} ${ctx.url} - does not exist`);
+		throw Boom.notFound(`${ctx.method} ${ctx.url} - does not exist`);
   });
 
 	// hook up error handlers
 	app.use(options.allowedMethods({
-		methodNotAllowed : () => boom.methodNotAllowed(),
-		notImplemented : () => boom.notImplemented(),
+		methodNotAllowed : () => Boom.methodNotAllowed(),
+		notImplemented : () => Boom.notImplemented(),
 		throw : true
 	}));
 

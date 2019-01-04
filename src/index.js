@@ -1,11 +1,8 @@
-import 'babel-polyfill';
-import 'source-map-support/register';
-
-import Koa from 'koa';
 import bunyan from 'bunyan';
 import initData from './data';
 import initModels from './models';
 import initRoutes from './routes';
+import Koa from 'koa';
 import settings from 'settings-lib';
 
 const
