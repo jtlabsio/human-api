@@ -1,9 +1,0 @@
-{
-	"logging": {
-		"level": "info"
-	},
-	"server": {
-		"port": 3080,
-		"secure": false
-	}
-}

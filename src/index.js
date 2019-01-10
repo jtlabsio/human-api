@@ -7,7 +7,7 @@ import settings from 'settings-lib';
 
 const
 	DEFAULT_APP_NAME = 'human-api',
-	DEFAULT_SETTINGS_PATH = 'settings/defaults.json';
+	DEFAULT_SETTINGS_PATH = 'settings/defaults.yml';
 
 export default (async (app) => {
 	// load app settings and configuration overrides
@@ -22,7 +22,7 @@ export default (async (app) => {
 	});
 
 	// output settings to debug
-	app.log.debug(app.settings);
+	app.log.info(app.settings);
 
 	// instantiate data and models
 	let
